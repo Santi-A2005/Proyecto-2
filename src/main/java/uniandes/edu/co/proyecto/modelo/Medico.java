@@ -18,11 +18,11 @@ public class Medico {
     
     @ManyToOne
     @JoinColumn(name = "IPS", referencedColumnName = "Nit")
-    private int IPS;
+    private IPS IPS;
 
     public Medico(){;}
 
-    public Medico(int numeroDocumento, char tipoDocumento, char especialidad, char registroMedico, int iPS) {
+    public Medico(int numeroDocumento, char tipoDocumento, char especialidad, char registroMedico, IPS iPS) {
         NumeroDocumento = numeroDocumento;
         TipoDocumento = tipoDocumento;
         Especialidad = especialidad;
@@ -62,11 +62,11 @@ public class Medico {
         RegistroMedico = registroMedico;
     }
 
-    public int getIPS() {
+    public IPS getIPS() {
         return IPS;
     }
 
-    public void setIPS(int iPS) {
+    public void setIPS(IPS iPS) {
         IPS = iPS;
     }
 
