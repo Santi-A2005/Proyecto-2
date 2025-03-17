@@ -6,7 +6,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="IPS")
-public abstract class IPS {
+public  class IPS {
     
     @Id
     private int Nit;
