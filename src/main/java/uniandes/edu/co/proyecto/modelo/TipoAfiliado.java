@@ -1,6 +1,7 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -12,6 +13,7 @@ public class TipoAfiliado {
     private char Tipo;
     private char Relacion;
 
+    @Id
     @ManyToOne
     @JoinColumn(name = "Afiliado", referencedColumnName = "NumeroDocumento")
     private Afiliado Afiliado;
