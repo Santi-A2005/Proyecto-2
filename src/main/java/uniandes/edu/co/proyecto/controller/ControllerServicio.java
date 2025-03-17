@@ -17,13 +17,13 @@ public class ControllerServicio {
     private  ServicioRepository servicioRepository;
 
     @GetMapping("/Servicio/new")
-    public String  IPSForm(Model model){
+    public String  SerivcioForm(Model model){
         model.addAttribute("Servicio", new Servicio());
         return "ServicioNuevo";
     }
 
     @PostMapping("/IPS/Servicio/save")
-    public String IPSGuardar(@ModelAttribute Servicio servicio) {
+    public String ServicioGuardar(@ModelAttribute Servicio servicio) {
         servicioRepository.registrarServicio(servicio.getServicio());
         return "redirect:/Servicio/new";
     }
