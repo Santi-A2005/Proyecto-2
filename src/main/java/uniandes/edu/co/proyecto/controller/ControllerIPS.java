@@ -9,10 +9,11 @@ import uniandes.edu.co.proyecto.repositorio.IPSRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 
-@Controller
+@RestController
 public class ControllerIPS {
 
     @Autowired
@@ -21,7 +22,7 @@ public class ControllerIPS {
     @GetMapping("/IPS/new")
     public String  IPSForm(Model model){
         model.addAttribute("IPS", new IPS());
-        return "IPSNuevo";
+        return model.toString();
     }
 
     @PostMapping("/IPS/new/save")

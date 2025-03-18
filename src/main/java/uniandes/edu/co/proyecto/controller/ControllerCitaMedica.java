@@ -6,12 +6,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import uniandes.edu.co.proyecto.modelo.CitaMedica;
 import uniandes.edu.co.proyecto.repositorio.CitaMedicaRepository;
 
 
-@Controller
+@RestController
 public class ControllerCitaMedica {
 
     @Autowired
@@ -20,7 +21,7 @@ public class ControllerCitaMedica {
     @GetMapping("/CitasMedicas/new")
     public String  CitaMedicaForm(Model model){
         model.addAttribute("Servicio", new CitaMedica());
-        return "CitaMedicaNuevo";
+        return model.toString();
     }
 
     @PostMapping("/CitasMedicas/new/save")

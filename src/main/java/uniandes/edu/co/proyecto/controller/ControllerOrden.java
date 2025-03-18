@@ -6,10 +6,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import uniandes.edu.co.proyecto.modelo.Orden;
 import uniandes.edu.co.proyecto.repositorio.OrdenRepository;
 
-@Controller
+@RestController
 public class ControllerOrden {
 
     @Autowired
@@ -18,7 +20,7 @@ public class ControllerOrden {
     @GetMapping("/Orden/new")
     public String  OrdenForm(Model model){
         model.addAttribute("Orden", new Orden());
-        return "OrdenNuevo";
+        return model.toString();
     }
 
     @PostMapping("/Orden/new/save")

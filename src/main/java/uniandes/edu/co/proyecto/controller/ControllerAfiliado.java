@@ -6,11 +6,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import uniandes.edu.co.proyecto.modelo.Afiliado;
 import uniandes.edu.co.proyecto.repositorio.AfiliadoRepository;
 
-@Controller
+@RestController
 public class ControllerAfiliado {
 
     @Autowired
@@ -19,7 +20,7 @@ public class ControllerAfiliado {
     @GetMapping("/Afiliado/new")
     public String  AfiliadoForm(Model model){
         model.addAttribute("Afiliado", new Afiliado());
-        return "AfiliadoNuevo";
+        return model.toString();
     }
 
     @PostMapping("/Afiliado/new/save")

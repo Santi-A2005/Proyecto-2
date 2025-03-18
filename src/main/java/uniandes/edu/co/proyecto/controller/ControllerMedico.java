@@ -6,10 +6,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import uniandes.edu.co.proyecto.modelo.Medico;
 import uniandes.edu.co.proyecto.repositorio.MedicoRepository;
 
-@Controller
+@RestController
 public class ControllerMedico {
 
     @Autowired
@@ -18,7 +20,7 @@ public class ControllerMedico {
     @GetMapping("/Medico/new")
     public String  MedicoForm(Model model){
         model.addAttribute("Medico", new Medico());
-        return "MedicoNuevo";
+        return model.toString();
     }
 
     @PostMapping("/Medico/new/save")

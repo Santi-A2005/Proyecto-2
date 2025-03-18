@@ -6,13 +6,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import uniandes.edu.co.proyecto.modelo.Servicio;
 import uniandes.edu.co.proyecto.modelo.ServicioIPS;
 import uniandes.edu.co.proyecto.modelo.ServicioIPSPK;
 import uniandes.edu.co.proyecto.repositorio.ServicioIPSRepository;
 
-@Controller
+@RestController
 public class ControllerServicioIPS {
 
     @Autowired
@@ -21,7 +22,7 @@ public class ControllerServicioIPS {
     @GetMapping("/ServicioIPS/new")
     public String  ServicioIPSForm(Model model){
         model.addAttribute("Servicio", new Servicio());
-        return "ServicioIPSNuevo";
+        return model.toString();
     }
 
     @PostMapping("/ServicioIPS/new/save")
