@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "d297d76b-33be-4417-b34f-4919b64b671b",
+		"name": "SisTrans Proyecto 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41957663"
+	},
+	"item": [
+		{
+			"name": "IPS Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/IPS/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"IPS",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Afiliado Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Afiliado/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Afiliado",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CitaMedica Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/CitasMedicas/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CitasMedicas",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medico Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Medico/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Medico",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orden Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Orden/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Orden",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registro Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/RegistroOrdenServicio/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RegistroOrdenServicio",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Servicio Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Servicio/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Servicio",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ServicioIPS Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ServicioIPS/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ServicioIPS",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
